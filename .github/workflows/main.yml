@@ -6,7 +6,7 @@ jobs:
   cartera_test:
     runs-on: ubuntu-latest
     -name: descargar codigo
-     uses: action/checkout@v5
+     uses: actions/checkout@v5
      
     - name: descargar pytest
       run: pip install pytest
