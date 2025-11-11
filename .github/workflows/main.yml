@@ -1,0 +1,16 @@
+name: Cartera_workflow
+
+on: push 
+
+jobs: 
+  cartera_test:
+    runs-on: ubuntu-latest
+    -name: descargar codigo
+     uses: action/checkout@v5
+     
+    - name: descargar pytest
+      run: pip install pytest
+
+    - name: utilizar test
+      run: pytest test.py
+      
